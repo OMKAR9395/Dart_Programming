@@ -8,7 +8,6 @@ void main(){
   print(Number.runtimeType);
 
   Number = true;
-
     print(Number);
   print(Number.runtimeType);
   
