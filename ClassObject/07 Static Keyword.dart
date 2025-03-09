@@ -12,6 +12,7 @@ class Car {
     print("Total Cars: $totalCars");
   }
 }
+
 void main() 
 {
   Car car1 = Car("Tesla");
