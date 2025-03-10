@@ -19,4 +19,5 @@ void main()
   Car car2 = Car("BMW");
 
   Car.showTotalCars(); 
+  print(Car.totalCars);
 }
