@@ -40,8 +40,8 @@ void main()
   // Car car3 = new Car ();           // Default object created
   // Car Car4 = new Car(10,20);       // Two Parameterizes Objecy
 
-  print('We Are Inside Of Main ${car1.brand}');
-  print('We Are Inside Of Main ${car2.brand}');
+  print('We Are Inside Of Main ${car1.brand}');   //using string interpolation
+  print('We Are Inside Of Main ${car2.brand}');   //using string interpolation
 
   // car1.showTotalCars();        //Cannot Acces  with object because ShowTotalCars function is Static
   // car2.showTotalCars();        //Cannot Acces  with object because ShowTotalCars function is Static
