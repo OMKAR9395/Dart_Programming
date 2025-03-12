@@ -5,7 +5,7 @@ class Dart {
   int? No2;
 
   
-  Dart(){
+  Dart(){                     //      default constructor
     print("We Are Inside Of Constructor");
     print("$No1 $No2");
 
