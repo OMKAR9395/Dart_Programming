@@ -1,5 +1,15 @@
 void main(){
-    print('This Is Omkar Mohite');  
+  dynamic number = 'omkar';
+
+  print(number);  
+  print(number.runtimeType);  
+  print(number.hashCode);  
+
+  
+  number = true;
+  print(number);  
+  print(number.runtimeType);  
+  print(number.hashCode);   
 }
 /*
 
