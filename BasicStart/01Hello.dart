@@ -5,7 +5,6 @@ void main(){
   print(number.runtimeType);  
   print(number.hashCode);  
 
-  
   number = true;
   print(number);  
   print(number.runtimeType);  
