@@ -1,4 +1,4 @@
-void main(){
+void main(){    ///entry point function
   dynamic number = 'omkar';
 
   print(number);  
