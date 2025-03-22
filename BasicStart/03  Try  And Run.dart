@@ -10,7 +10,7 @@ void main() {           /// Entry Point Function
   print("Sum of Two Numbers: ${calc.add(10, 20)}");   ///Calling Function 
   print('${Calculator()}');                           ///Creating Instance Without getting memory
 
-  print(Calculator().runtimeType);                ///C
-  print('${ new Calculator()}');
-  print(calc);
+  print(Calculator().runtimeType);                ///Calculator   
+  print('${ new Calculator()}');                  ///Innstance of class
+  print(calc);                                    /// Instance of class
 }
