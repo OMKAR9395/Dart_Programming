@@ -5,11 +5,12 @@ class Calculator {
   }
 }
 
-void main() {
-  Calculator calc = new Calculator();
-  print("Sum of Two Numbers: ${calc.add(10, 20)}");
-  print('${Calculator()}');
-  print(Calculator().runtimeType);
+void main() {           /// Entry Point Function
+  Calculator calc = new Calculator();           /// Creating Innstance of Class
+  print("Sum of Two Numbers: ${calc.add(10, 20)}");   ///Calling Function 
+  print('${Calculator()}');                           ///Creating Instance Without getting memory
+
+  print(Calculator().runtimeType);                ///C
   print('${ new Calculator()}');
   print(calc);
 }
