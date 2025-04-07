@@ -128,5 +128,5 @@ class Menu extends ArithmeticCalc {
 }
 void main() {
   Menu obj = new Menu();
- /// obj.Menu(); // Calls the method named 
+ /// obj.Menu(); // Calls the method
 }
