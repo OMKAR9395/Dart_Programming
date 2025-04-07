@@ -81,7 +81,6 @@ class ArithmeticCalc {
     stdout.write("Division of Numbers => $div\n");
   }
 }
-
 class Menu extends ArithmeticCalc {
  Menu() {
     while (true) {
