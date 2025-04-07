@@ -120,7 +120,6 @@ class Menu extends ArithmeticCalc {
           default:
             stdout.writeln("Invalid Choice");
         }
-
         print("Thanks for visiting the application..!");
       }
     }
