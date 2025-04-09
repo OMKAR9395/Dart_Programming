@@ -24,7 +24,6 @@ class Keyboard extends Laptop {     /// Child Class
 
   String? keyBoard;      
   String? backlight; 
-
   @override
  void getDetails(){        ///    Child Method
 
