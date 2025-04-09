@@ -44,8 +44,7 @@ class Keyboard extends Laptop {     /// Child Class
   stdout.writeln('Your Laptop Name is $brand And There Processor is $processor Your Laptop Have $keyBoard and Backlight is $backlight');    
  }
 }
-
-void main() {
+void main() {       /// entry point function
   Keyboard obj1 = new Keyboard(); /// object created child
 
   obj1.getDetails();      /// method calling
