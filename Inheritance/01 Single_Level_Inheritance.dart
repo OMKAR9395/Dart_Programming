@@ -14,10 +14,8 @@ Laptop(){   /// Parent Constructor
 
   stdout.writeln('Enter Laptop Processor Name : '); /// Get Input
   processor  = stdin.readLineSync();
-
   }
 }
-
 class Keyboard extends Laptop {     /// Child Class
 
   String? keyBoard;      
