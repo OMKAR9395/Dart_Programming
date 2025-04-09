@@ -16,8 +16,6 @@ Laptop(){   /// Parent Constructor
   processor  = stdin.readLineSync();
 
   }
-  
-  
 }
 
 class Keyboard extends Laptop {     /// Child Class
