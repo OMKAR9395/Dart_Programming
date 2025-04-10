@@ -1,6 +1,6 @@
 import 'dart:io';
 
-class Laptop {      /// Parent Class
+class Laptop {      /// Parent Class  of keyboard 
   String? brand;
   String? processor;
 
@@ -37,16 +37,16 @@ class Keyboard extends Laptop {     /// Child Class of Laptop And Parent Class o
   }
 }
 
-class Display extends Keyboard {    /// Child Class of Display
+class Display extends Keyboard {    /// Child Class of keyboard
   String? screenSize;
   String? displayType;
 
-  Display() {
+  Display() {            /// child Constructor
     stdout.writeln('\n================ Enter Display Details ================\n');
   }
 
   @override
-  void getDetails() {
+  void getDetails() {    /// Child method  
     super.getDetails();
 
     stdout.writeln('Enter Screen Size (14 inch, 15.6 inch):');
@@ -56,7 +56,7 @@ class Display extends Keyboard {    /// Child Class of Display
     displayType = stdin.readLineSync();
   }
 
-  void showDetails() {
+  void showDetails() {                /// Child method  
     stdout.writeln('\n================ Full Laptop Details Here ================');
     stdout.writeln('Brand           : $brand');
     stdout.writeln('Processor       : $processor');
@@ -66,8 +66,8 @@ class Display extends Keyboard {    /// Child Class of Display
     stdout.writeln('Display Type    : $displayType');
   }
 }
-void main() {
-  Display obj = new Display();
+void main() {     ///Entry point function
+  Display obj = new Display();          /// object created Display 
   obj.getDetails();
   obj.showDetails();
 }
