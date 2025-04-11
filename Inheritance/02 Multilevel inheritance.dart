@@ -37,7 +37,7 @@ class Keyboard extends Laptop {     /// Child Class of Laptop And Parent Class o
   }
 }
 
-class Display extends Keyboard {    /// Child Class of keyboard
+class Display extends Keyboard {    /// Child Class of keyboard6
   String? screenSize;
   String? displayType;
 
