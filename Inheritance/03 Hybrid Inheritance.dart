@@ -11,7 +11,6 @@ class Electronics {
 
   }
 }
-
 ///  Child Class of Electronics
 class Laptop extends Electronics {
   String? processor;
