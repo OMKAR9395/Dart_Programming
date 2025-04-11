@@ -6,7 +6,7 @@ class Electronics {
 
   Electronics() {     ///constructor
 
-    stdout.writeln("Enter Brand Name: (Laptop / Mobile)");
+    stdout.writeln("Enter Brand Name:");
     brand = stdin.readLineSync();
 
   }
@@ -36,7 +36,6 @@ class Mobile extends Electronics {
    
   }
 }
-
 /// Grandchild Class of Electronics
 class GamingLaptop extends Laptop {
   String? gpu;
