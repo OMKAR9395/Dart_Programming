@@ -49,7 +49,6 @@ class GamingLaptop extends Laptop {
     stdout.writeln("Your Gaming Laptop Brand Name is $brand With $processor Processor And Graphic Card Name Is $gpu");
   }
 }
-
 void main() {     /// ENTRY POINT FUNCTION
   stdout.writeln("========== Enter Gaming Laptop Details ===========");
 
