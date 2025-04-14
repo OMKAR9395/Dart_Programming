@@ -6,7 +6,6 @@ void main() {
 int add(String a, String b) {
 
   int retVal = 0;
-  
   try {
 
     retVal = int.parse(a) + int.parse(b);
