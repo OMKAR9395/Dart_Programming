@@ -36,7 +36,6 @@ class SavingsAccount extends BankAccount {              /// Child class
   }
 
 }
-
 class CurrentAccount extends BankAccount {         /// Child class
   
   void withdrawAmount() {               ///method
