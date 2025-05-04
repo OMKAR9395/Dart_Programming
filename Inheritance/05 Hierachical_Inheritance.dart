@@ -72,7 +72,6 @@ class FixedDepositAccount extends BankAccount {        /// Child class
     stdout.writeln("Maturity Amount after $years years at $interest%:Your Total Amount is $maturityAmount");
   }
 }
-
 void main() {         /// Entry point function
  
   stdout.writeln("\n Savings Account:");
