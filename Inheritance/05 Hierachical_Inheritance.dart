@@ -73,8 +73,7 @@ class FixedDepositAccount extends BankAccount {        /// Child class
   }
 }
 
-
-void main() {
+void main() {         /// Entry point function
  
   stdout.writeln("\n Savings Account:");
   SavingsAccount saving = SavingsAccount();    /// Object Savings Account
