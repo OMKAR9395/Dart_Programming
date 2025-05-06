@@ -29,9 +29,11 @@ void main() {     ///Entry point funnction
 
   print("\n---  Customer ---");
   Customer cust = new Customer();
-  cust.setUser("Omkar");
+
+  cust.setUser("Omkar");              ///Parameters method calling
   cust.showUser();
-  cust.orderFood("Pizza");
-  cust.giveRating("The Fork Café", 5);
+
+  cust.orderFood("Pizza");        ///Parameters method calling
+  cust.giveRating("The Patil Café", 5);
 
 }
