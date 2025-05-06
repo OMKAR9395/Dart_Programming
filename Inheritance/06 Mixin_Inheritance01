@@ -5,7 +5,6 @@ mixin Rating {
     print("You rated $to with $rating stars.");
   }
 }
-
 // Base class: User
 class User {
   String? name;
