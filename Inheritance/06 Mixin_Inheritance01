@@ -32,15 +32,6 @@ class Customer extends User with Rating {
   }
 }
 
-// DeliveryBoy uses both location and rating
-class DeliveryBoy extends User with LocationTracker, Rating {
-  void deliverOrder(String address) {
-    print("Delivering to: $address");
-    updateLocation("Near destination");
-  }
-}
-
-
 void main() {
  
 
@@ -51,10 +42,4 @@ void main() {
   cust.orderFood("Pizza");
   cust.giveRating("The Fork Café", 5);
 
-  print("\n---  Delivery Boy ---");
-  DeliveryBoy db = DeliveryBoy();
-  db.setUser("Ravi");
-  db.showUser();
-  db.deliverOrder("123, Shivaji Nagar");
-  db.giveRating("Customer Omkar", 5);
 }
