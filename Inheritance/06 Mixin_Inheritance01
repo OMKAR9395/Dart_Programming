@@ -40,25 +40,9 @@ class DeliveryBoy extends User with LocationTracker, Rating {
   }
 }
 
-// Restaurant uses location
-class Restaurant with LocationTracker {
-  String? restaurantName;
-
-  void setRestaurant(String name) {
-    restaurantName = name;
-  }
-
-  void updateMenu() {
-    print("$restaurantName updated their menu.");
-  }
-}
 
 void main() {
-  print("--- Restaurant ---");
-  Restaurant res = Restaurant();
-  res.setRestaurant("The Fork Café");
-  res.updateMenu();
-  res.updateLocation("Karad");
+ 
 
   print("\n---  Customer ---");
   Customer cust = Customer();
