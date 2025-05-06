@@ -1,11 +1,5 @@
-// Mixin for location tracking
-mixin LocationTracker {
-  void updateLocation(String location) {
-    print("Current Location: $location");
-  }
-}
 
-// Mixin for rating system
+// Mixin rating system
 mixin Rating {
   void giveRating(String to, int rating) {
     print("You rated $to with $rating stars.");
@@ -28,7 +22,7 @@ class User {
 // Customer uses rating
 class Customer extends User with Rating {
   void orderFood(String food) {
-    print("Ordered: $food");
+    writeln("Ordered: $food");
   }
 }
 
