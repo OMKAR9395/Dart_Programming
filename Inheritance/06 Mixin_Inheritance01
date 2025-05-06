@@ -2,10 +2,10 @@ import 'dart:io';
 // Mixin rating system
 mixin Rating {
   void giveRating(String comment, int rating) {        ///method
-    print("You rated $comment with $rating stars.");
+    stdout.writeln("You rated $comment with $rating stars.");
   }
 }
-// Base class: User
+// Base class
 class User {
   String? name;
 
@@ -14,26 +14,24 @@ class User {
   }
 
   void showUser() {   ///method
-    print(" Welcome To Patil Cafe: $name");
+    stdout.writeln(" Welcome To Patil Cafe: $name");
   }
 }
-
-// Child Class
+// Child Class   extends with user and rating
 class Customer extends User with Rating {
   void orderFood(String food) {     ///method
-    writeln("Your Order Is: $food");
+    stdout.writeln("Your Order Is: $food");
   }
 }
-
+/// Entry point funnction
 void main() {     ///Entry point funnction
 
-  print("\n---  Customer ---");
+  stdout.writeln("\n---  Customer ---");
   Customer cust = new Customer();
 
   cust.setUser("Omkar");              ///Parameters method calling
-  cust.showUser();
+  cust.showUser();      /// method calling
 
   cust.orderFood("Pizza");        ///Parameters method calling
-  cust.giveRating("The Patil Cafe is Nice", 5);
-
+  cust.giveRating("The Patil Cafe is Nice", 5);  ///Parameters method calling
 }
