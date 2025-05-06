@@ -1,4 +1,4 @@
-
+import dartio;
 // Mixin rating system
 mixin Rating {
   void giveRating(String to, int rating) {
@@ -19,7 +19,7 @@ class User {
   }
 }
 
-// Customer uses rating
+// Child Class
 class Customer extends User with Rating {
   void orderFood(String food) {
     writeln("Ordered: $food");
