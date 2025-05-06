@@ -8,7 +8,7 @@ mixin LocationTracker {
 // Mixin for rating system
 mixin Rating {
   void giveRating(String to, int rating) {
-    print("⭐ You rated $to with $rating stars.");
+    print("You rated $to with $rating stars.");
   }
 }
 
@@ -21,7 +21,7 @@ class User {
   }
 
   void showUser() {
-    print("👤 User: $name");
+    print(" User: $name");
   }
 }
 
