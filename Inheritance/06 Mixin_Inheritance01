@@ -1,0 +1,76 @@
+// Mixin for location tracking
+mixin LocationTracker {
+  void updateLocation(String location) {
+    print("Current Location: $location");
+  }
+}
+
+// Mixin for rating system
+mixin Rating {
+  void giveRating(String to, int rating) {
+    print("⭐ You rated $to with $rating stars.");
+  }
+}
+
+// Base class: User
+class User {
+  String? name;
+
+  void setUser(String username) {
+    name = username;
+  }
+
+  void showUser() {
+    print("👤 User: $name");
+  }
+}
+
+// Customer uses rating
+class Customer extends User with Rating {
+  void orderFood(String food) {
+    print("🛒 Ordered: $food");
+  }
+}
+
+// DeliveryBoy uses both location and rating
+class DeliveryBoy extends User with LocationTracker, Rating {
+  void deliverOrder(String address) {
+    print("🚚 Delivering to: $address");
+    updateLocation("Near destination");
+  }
+}
+
+// Restaurant uses location
+class Restaurant with LocationTracker {
+  String? restaurantName;
+
+  void setRestaurant(String name) {
+    restaurantName = name;
+  }
+
+  void updateMenu() {
+    print("📋 $restaurantName updated their menu.");
+  }
+}
+
+void main() {
+  print("--- 👨‍🍳 Restaurant ---");
+  Restaurant res = Restaurant();
+  res.setRestaurant("The Fork Café");
+  res.updateMenu();
+  res.updateLocation("Karad");
+
+  print("\n--- 🧍 Customer ---");
+  Customer cust = Customer();
+  cust.setUser("Omkar");
+  cust.showUser();
+  cust.orderFood("Pizza");
+  cust.giveRating("The Fork Café", 5);
+
+  print("\n--- 🚴 Delivery Boy ---");
+  DeliveryBoy db = DeliveryBoy();
+  db.setUser("Ravi");
+  db.showUser();
+  db.deliverOrder("123, Shivaji Nagar");
+  db.giveRating("Customer Omkar", 5);
+}
