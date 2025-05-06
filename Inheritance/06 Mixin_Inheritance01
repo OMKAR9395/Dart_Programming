@@ -1,7 +1,7 @@
-import dartio;
+import 'dart:io';
 // Mixin rating system
 mixin Rating {
-  void giveRating(String to, int rating) {
+  void giveRating(String to, int rating) {        ///method
     print("You rated $to with $rating stars.");
   }
 }
@@ -10,27 +10,26 @@ mixin Rating {
 class User {
   String? name;
 
-  void setUser(String username) {
+  void setUser(String username) {       ///method
     name = username;
   }
 
-  void showUser() {
+  void showUser() {   ///method
     print(" User: $name");
   }
 }
 
 // Child Class
 class Customer extends User with Rating {
-  void orderFood(String food) {
+  void orderFood(String food) {     ///method
     writeln("Ordered: $food");
   }
 }
 
-void main() {
- 
+void main() {     ///Entry point funnction
 
   print("\n---  Customer ---");
-  Customer cust = Customer();
+  Customer cust = new Customer();
   cust.setUser("Omkar");
   cust.showUser();
   cust.orderFood("Pizza");
