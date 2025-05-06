@@ -28,14 +28,14 @@ class User {
 // Customer uses rating
 class Customer extends User with Rating {
   void orderFood(String food) {
-    print("🛒 Ordered: $food");
+    print("Ordered: $food");
   }
 }
 
 // DeliveryBoy uses both location and rating
 class DeliveryBoy extends User with LocationTracker, Rating {
   void deliverOrder(String address) {
-    print("🚚 Delivering to: $address");
+    print("Delivering to: $address");
     updateLocation("Near destination");
   }
 }
@@ -49,25 +49,25 @@ class Restaurant with LocationTracker {
   }
 
   void updateMenu() {
-    print("📋 $restaurantName updated their menu.");
+    print("$restaurantName updated their menu.");
   }
 }
 
 void main() {
-  print("--- 👨‍🍳 Restaurant ---");
+  print("--- Restaurant ---");
   Restaurant res = Restaurant();
   res.setRestaurant("The Fork Café");
   res.updateMenu();
   res.updateLocation("Karad");
 
-  print("\n--- 🧍 Customer ---");
+  print("\n---  Customer ---");
   Customer cust = Customer();
   cust.setUser("Omkar");
   cust.showUser();
   cust.orderFood("Pizza");
   cust.giveRating("The Fork Café", 5);
 
-  print("\n--- 🚴 Delivery Boy ---");
+  print("\n---  Delivery Boy ---");
   DeliveryBoy db = DeliveryBoy();
   db.setUser("Ravi");
   db.showUser();
