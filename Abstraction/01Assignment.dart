@@ -4,42 +4,27 @@ abstract class Hotel {
   void makePayment(double amount); // abstract method Declaration
 
   void printReceipt(String customerName) {
-    print("🧾 Booking confirmed for $customerName. Enjoy your stay!");
+    print(" Booking confirmed for $customerName. Enjoy your night");
   }
 }
-
 // Budget Hotel
-class BudgetHotel extends Hotel {
+class BOOK extends Hotel {
   @override
-  void bookRoom() {
-    print("✅ Room booked in Budget Hotel (AC/Non-AC, Basic amenities).");
+  void bookRoom() {     ///method 
+    print(" Room Is booked.");
   }
-
   @override
-  void makePayment(double amount) {
-    print("💰 Paid ₹$amount via UPI for Budget Hotel.");
-  }
-}
-
-// Luxury Hotel 
-class LuxuryHotel extends Hotel {
-  @override
-  void bookRoom() {
-    print("✅ Room booked in Luxury Hotel (Suite, Pool, Spa, Breakfast included).");
-  }
-
-  @override
-  void makePayment(double amount) {
-    print("Paid ₹$amount via Credit Card for Luxury Hotel.");
+  void makePayment(double amount) {   ///method
+    print(" Paid ₹$amount via UPI for Budget Hotel.");
   }
 }
-
-// Main function
+// entry point function
 void main() {
-  Hotel customer1 = new BudgetHotel();
+  BOOK customer1 = new BOOK();  
 
-  print(" Customer 1:");
+  print(" Customer Booking System :");
 
+  ///method calling
   customer1.bookRoom();
   customer1.makePayment(1500);
   customer1.printReceipt("Omkar");
