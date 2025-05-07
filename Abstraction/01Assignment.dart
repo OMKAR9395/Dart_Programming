@@ -1,6 +1,7 @@
 // Abstract Class
 abstract class Hotel {
   void bookRoom();               // abstract method Declaration
+  
   void makePayment(double amount); // abstract method Declaration
 
   void printReceipt(String customerName) {
