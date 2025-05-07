@@ -3,6 +3,7 @@ abstract class Hotel {
   void bookRoom();               // abstract method Declaration
 
   void makePayment(double amount); // abstract method Declaration
+
   void printReceipt(String customerName) {
     print(" Booking confirmed for $customerName. Enjoy your night");
   }
@@ -15,7 +16,7 @@ class BOOK extends Hotel {
   }
   @override
   void makePayment(double amount) {   ///method
-    print(" Paid ₹$amount via UPI for Budget Hotel.");
+    print(" Paid ₹$amount via UPI for room booking in Hotel.");
   }
 }
 // entry point function
