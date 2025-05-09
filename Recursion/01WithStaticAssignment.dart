@@ -1,4 +1,4 @@
-class MathUtil {
+class Fact {
   static int callCount = 0; // Static variable to count recursive calls
 
   static int factorial(int n) {
@@ -13,8 +13,8 @@ class MathUtil {
 
 void main() {
   int number = 5;
-  int result = MathUtil.factorial(number);
+  int result = Fact.factorial(number);
   
   print("Factorial of $number is $result");
-  print("Recursive calls made: ${MathUtil.callCount}");
+  print("Recursive calls made: ${Fact.callCount}");
 }
