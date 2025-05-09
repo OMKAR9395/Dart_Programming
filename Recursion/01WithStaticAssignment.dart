@@ -10,6 +10,7 @@ class MathUtil {
     }
   }
 }
+
 void main() {
   int number = 5;
   int result = MathUtil.factorial(number);
