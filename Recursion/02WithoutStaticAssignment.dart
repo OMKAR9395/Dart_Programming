@@ -5,7 +5,6 @@ class FactorialCalculator {
     return (n <= 1) ? 1 : n * factorial(n-1);         ///using turnery Operator And Condition if else
   }
 }
-
 void main() {     ///entry point function
 
   stdout.write("Enter a number: ");                 ///user input valuue
