@@ -9,7 +9,6 @@ class FactorialCalculator {
 
 void main() {     ///entry point function
 
-
   stdout.write("Enter a number: ");                 ///user input valuue
   int num = int.parse(stdin.readLineSync() ?? '0');
 
