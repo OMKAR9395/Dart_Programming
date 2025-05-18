@@ -35,7 +35,6 @@ class Armstrong {
   }
 }
 
-
 void main() {
   stdout.write("Enter a number to check if it's Armstrong: ");
   int? number = int.tryParse(stdin.readLineSync() ?? '');
