@@ -5,7 +5,7 @@ class Armstrong {
           stdout.writeln("You Entered Negative number please Enter Positive Integer.");
           return false;
         }
-        
+
     int count = 0, temp = value;
 
               while (temp != 0) {
@@ -16,6 +16,7 @@ class Armstrong {
           stdout.writeln("Enter a valid 3 or 4-digit number.");
           return false;
         }
+        
     int copy = value, sum = 0, digit = 0;
 
             while (value != 0) {
