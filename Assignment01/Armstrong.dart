@@ -5,6 +5,7 @@ class Armstrong {
           stdout.writeln("You Entered Negative number please Enter Positive Integer.");
           return false;
         }
+        
     int count = 0, temp = value;
 
               while (temp != 0) {
